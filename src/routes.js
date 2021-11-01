@@ -11,26 +11,9 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { mainListItems } from '../src/components/Menu';
 import CreateClient from '../src/pages/client/dashboard/createClient';
 
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Link,
-  Grid,
-  Container,
-  IconButton,
-  Divider,
-  Typography,
-  List,
-  Toolbar,
-  Box,
-} from '@mui/material';
+import { IconButton, Divider, List, Toolbar, Box } from '@mui/material';
 
 import Clients from './pages/client/dashboard/clients';
-import Home from './pages/Home';
 
 export default function Routes() {
   const mdTheme = createTheme();
@@ -128,7 +111,6 @@ export default function Routes() {
               <Divider />
               <List>{mainListItems}</List>
               <Divider />
-              {/* <List>{secondaryListItems}</List> */}
             </Drawer>
             <Box
               component="main"
@@ -145,19 +127,9 @@ export default function Routes() {
               <Toolbar />
               <Route path="/" exact component={Clients} />
               <Route path="/create" exact component={CreateClient} />
-              {/* <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-                <Grid container spacing={3}>
-                  <Grid item sm={12}>
-                    <CreateClient />
-                  </Grid>
-                </Grid>
-                <Copyright sx={{ pt: 4 }} />
-              </Container> */}
             </Box>
           </Box>
         </ThemeProvider>
-
-        {/* <Route path="/home" exact component={Home} /> */}
       </Switch>
     </BrowserRouter>
   );

@@ -1,11 +1,6 @@
 import * as React from 'react';
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
-import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import { mainListItems } from '../../../components/Menu';
 import Paper from '@mui/material/Paper';
 import { useState, useEffect } from 'react';
 import api from '../../../services/api';
@@ -19,12 +14,7 @@ import {
   Link,
   Grid,
   Container,
-  IconButton,
-  Divider,
   Typography,
-  List,
-  Toolbar,
-  Box,
 } from '@mui/material';
 
 function Copyright(props) {

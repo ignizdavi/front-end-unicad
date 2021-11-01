@@ -26,9 +26,3 @@ export const mainListItems = (
     </ListItem>
   </div>
 );
-
-// export const secondaryListItems = (
-//   <div>
-//     <ListSubheader inset>Davi Barbosa</ListSubheader>
-//   </div>
-// );
